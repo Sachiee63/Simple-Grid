@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Responsive website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(204, 178, 94);
+        }
+        h2{
+            font-family: 'cursive';
+          text-align: center;
+          padding: 10px;
+        }
+        nav{
+            display: grid;
+            
+            text-decoration: none;
+            background-color: rgb(0, 0, 0);
+            place-items: center;
+           
+        }
+        
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav ul li:hover{
+            background-color: rgb(224, 149, 87);
+        }
+        .dropmenu{
+            display:inline-block;
+          
+        }
+        .dropdown{
+            display: none;
+            position: relative;
+            height: 20px;
+            width: 10px;
+            
+            
+        }
+        .dropdown ul{
+           height: 300px;
+           width: 300px;
+           background-color: rgb(223, 192, 126);
+        }
+        .dropmenu:hover .dropdown{
+            display:flex;
+            position: absolute;
+           
+        }
+       
+        img{
+            width: 400px;
+            height: 300px;
+            margin: 2px 2px 0px 2px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        .items img{
+             transition: 0.2 ease-out;
+        }
+        .items img:hover{
+                transform: scale(1.07);
+            }
+            h3{
+                text-align:center;
+            }
+            button{
+                display: block;
+                background-color: burlywood;
+                padding-bottom: 4px;
+                font-size: 20px;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+            button:hover{
+                background-color: brown;
+                transform: scale(1.04);
+                color: white;
+            }
+    </style>
+    </head>
+    <body>
+        <h2>Find Your Fragrance</h2>
+         <nav>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href class="dropmenu">
+                    <li>About</li>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Our baranches are in:</li>
+                            <li>1.Tamil Nadu</li>
+                            <li>2.Arab</li>
+                            <li>3.USA</li>
+                            <li>4.Japan</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#"> <li>contact</li></a>
+                <a href="#"><li>Service</li></a>
+                    
+            </ul>
+         </nav>
+        <section class="container">
+
+            <div class="items">
+                <img src="purfume.jpg">
+                <h3>Daisy Marcjoas</h3><br>
+                <button>Order</button>
+            </div>
+            <div class="items">
+                <img src="perfume2.jpg">
+                <h3>Guest girl</h3><br>
+                <button>Order</button>
+            </div>
+            <div class="items">
+                <img src="perfume3.jpg">
+                <h3>Modar</h3><br>
+                <button>Order</button>
+            </div>
+            <div class="items">
+                <img src="perfume4.jpg">
+                <h3>sampaguita</h3><br>
+                <button>Order</button>
+            </div>
+            <div class="items">
+                <img src="perfume5.jp.png">
+                <h3>Good girl</h3><br>
+                <button>Order</button>
+            </div>
+            <div class="items">
+                <img src="perfume6.jpg">
+                <h3>Azzora</h3><br>
+                <button>Order</button>
+            </div>
+</section>
+</body>
+    </html>
